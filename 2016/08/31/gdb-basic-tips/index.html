@@ -4,17 +4,30 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>乔可汗的小栈</title>
+  <title>gdb常用的基本功能 | 乔可汗的小栈</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="乔可汗的小栈">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="本文介绍了一些gdb最常用的基本功能。
+开始程序123&amp;gt; start&amp;gt; run&amp;gt; run arg1 arg2
+start会在main函数处自动设置一个断点，而run不会。run后面可以加参数作为main函数的实参。
+断点设置断点1234&amp;gt; break func_name&amp;gt; break file.c:105&amp;gt; break 105&amp;gt; b ...
+设置断点的方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gdb常用的基本功能">
+<meta property="og:url" content="http://yoursite.com/2016/08/31/gdb-basic-tips/index.html">
 <meta property="og:site_name" content="乔可汗的小栈">
-<meta property="og:description">
+<meta property="og:description" content="本文介绍了一些gdb最常用的基本功能。
+开始程序123&amp;gt; start&amp;gt; run&amp;gt; run arg1 arg2
+start会在main函数处自动设置一个断点，而run不会。run后面可以加参数作为main函数的实参。
+断点设置断点1234&amp;gt; break func_name&amp;gt; break file.c:105&amp;gt; break 105&amp;gt; b ...
+设置断点的方法">
+<meta property="og:updated_time" content="2016-08-31T08:04:43.746Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="乔可汗的小栈">
-<meta name="twitter:description">
+<meta name="twitter:title" content="gdb常用的基本功能">
+<meta name="twitter:description" content="本文介绍了一些gdb最常用的基本功能。
+开始程序123&amp;gt; start&amp;gt; run&amp;gt; run arg1 arg2
+start会在main函数处自动设置一个断点，而run不会。run后面可以加参数作为main函数的实参。
+断点设置断点1234&amp;gt; break func_name&amp;gt; break file.c:105&amp;gt; break 105&amp;gt; b ...
+设置断点的方法">
   
     <link rel="alternative" href="/atom.xml" title="乔可汗的小栈" type="application/atom+xml">
   
@@ -183,9 +196,7 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
-  
-    <article id="post-gdb-basic-tips" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-gdb-basic-tips" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/08/31/gdb-basic-tips/" class="article-date">
@@ -201,12 +212,19 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/31/gdb-basic-tips/">gdb常用的基本功能</a>
+    <h1 class="article-title" itemprop="name">
+      gdb常用的基本功能
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -224,215 +242,68 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/08/31/hexo-quick-start/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo快速使用指南</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
-
-
-
-
-
-
-
-  
-    <article id="post-hexo-quick-start" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/08/31/hexo-quick-start/" class="article-date">
-  	<time datetime="2016-08-31T02:19:30.000Z" itemprop="datePublished">2016-08-31</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/31/hexo-quick-start/">hexo快速使用指南</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>本文建立在已经配置好hexo + github环境的基础上，利用hexo推送博客的快速使用指南，如环境还未配置好，请自行Google一下，或者访问<strong>官方指南：</strong><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">https://hexo.io/zh-cn/docs/</a>。访问Google的方法可参照：<a href="https://github.com/racaljk/hosts" target="_blank" rel="external">https://github.com/racaljk/hosts</a></p>
-<h2 id="启动hexo服务"><a href="#启动hexo服务" class="headerlink" title="启动hexo服务"></a>启动hexo服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-<p>以上两条命令等价<br>server启动后可以访问<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>来查看本地博客</p>
-<h2 id="新建一篇博客"><a href="#新建一篇博客" class="headerlink" title="新建一篇博客"></a>新建一篇博客</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<p>在默认路径下新建一个title.md的文件</p>
-<h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-<p>以上两条命令等价<br>此命令将md文件转化为静态网页文件</p>
-<h2 id="部署博客到服务器"><a href="#部署博客到服务器" class="headerlink" title="部署博客到服务器"></a>部署博客到服务器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<p>以上两条命令等价<br>此命令将本地生成的静态文件上传到github服务器上，此时可以通过”username”.github.io来访问生成的博客</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-books-in-childhood" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/05/31/books-in-childhood/" class="article-date">
-  	<time datetime="2016-05-31T03:24:27.000Z" itemprop="datePublished">2016-05-31</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/31/books-in-childhood/">儿时记忆中的书籍</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>其实我小时候从来没有自己拥有过一本除了教材或辅导资料以外的书籍，所以我读的书都是蹭的（所以，现在我习惯蹭别人的书看……）我印象最深的一本书是我爷爷的连环画版的《圣经》，我爷爷曾负责在教会里讲解圣经，这也是家里唯一一本我看得懂的书（也只是只看得懂里面在讲故事而已…)尤其是最后一段，恶魔自地狱涌现人间，万千天使伴着圣光从天而降，将各种恶魔重新赶回地狱深渊。后来我就有了一个梦想，我要成为一个神！这个梦想一直持续到初中毕业才被我抛弃……如今想来也是会心一笑而已。</p>
-<p>小学的四年级左右的时候，班里开始广泛流传着这样的几本书，包括《十万个为什么》，《脑筋急转弯》，《歇后语大全》。当时课下最大的乐趣就是先看这几本书的内容，然后对同学提问，紧接着嘲笑一下对方的智商，哈哈….也是借着《歇后语大全》丰富小学时的作文素材了，一举两得啊。小学毕业之前，托同学们的福，我看过了《安徒生童话》和《格林童话》这两本书。当时的阅读习惯真好，一人买书，全班有福啊。尽管这些童话书里描绘了很多优美的故事和英勇的男主角，但是他们并没有撼动我要成神的梦想，我可是一个有原则的小学生，恩。</p>
-<p>后来，老姐上初中的时候买了一本类似与满分作文大全的书，我也是无聊的时候看了一些里面的记叙文，就当是故事书看了。里面的两篇文章对我影响很大，其一是《小侦探福尔摩斯》，那是我第一次接触“福尔摩斯”这个名字，致使我对这个侦探产生了浓厚的兴趣，到了大学的时候我就马上到图书馆搜罗《福尔摩斯》相关书籍了。另一篇文章是《背影》，里面说的是父亲对孩子大而无声的爱。我还记得文章的最后一句话：</p>
-<blockquote>
-<p><em>父亲的背影渐渐地消失在朦胧的白雾中，离我越来越远……</em></p>
-</blockquote>
-<p>这句话至今都一直触动着我。</p>
-<p>很遗憾小时候从未自己拥有过一本属于自己的课外书，这事可不能再发生在我孩子身上啦，哟嚯嚯嚯…… </p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/记忆/">记忆</a></li></ul>
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
 
 
 
-
-
-
-  
-    <article id="post-tips" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/05/25/tips/" class="article-date">
-  	<time datetime="2016-05-25T08:18:27.000Z" itemprop="datePublished">2016-05-25</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/25/tips/">小贝壳</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>常用的一些东西，方便查找</p>
-<h2 id="Quick-Keyboard"><a href="#Quick-Keyboard" class="headerlink" title="Quick Keyboard"></a>Quick Keyboard</h2><h3 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Ctrl + o   //移动到上一个位置</span><br><span class="line">Ctrl + i   //移动到下一个位置</span><br></pre></td></tr></table></figure>
-<h3 id="退出编辑模式"><a href="#退出编辑模式" class="headerlink" title="退出编辑模式"></a>退出编辑模式</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Ctrl + c</span><br><span class="line">Esc</span><br></pre></td></tr></table></figure>
-<h2 id="常用工具"><a href="#常用工具" class="headerlink" title="常用工具"></a>常用工具</h2><h3 id="wifi破解"><a href="#wifi破解" class="headerlink" title="wifi破解"></a>wifi破解</h3><p>注意在root模式下运行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ airmon-ng</span><br><span class="line">$ airmon-ng start wlan0</span><br><span class="line">$ airodump-ng mon0</span><br><span class="line"><span class="comment">#下面的这个窗口不关闭</span></span><br><span class="line">$ airodump-ng -c [channel] -w file.cap --bssid [Bssid] mon0  </span><br><span class="line">$ aireplay-ng -0 5 <span class="_">-a</span> [Bssid] -c [Station] mon0</span><br><span class="line">$ aircrack-ng file.cap -w wordlist</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vim/">vim</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="gdb-basic-tips" data-title="gdb常用的基本功能" data-url="http://yoursite.com/2016/08/31/gdb-basic-tips/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
 
-
-
-
-
-
-  
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -456,8 +327,8 @@
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
